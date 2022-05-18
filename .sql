@@ -131,6 +131,7 @@ ON ri.emp_no = de.emp_no
 WHERE de.to_date = ('9999-01-01');
 SELECT * FROM current_emp;
 
+-- Employee count by department number
 SELECT COUNT(ce.emp_no), de.dept_no
 FROM current_emp as ce
 LEFT JOIN dept_emp as de
